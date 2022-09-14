@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import clsx from 'clsx';
 
+
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { Container } from '@/components/Container';
@@ -11,6 +12,7 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
+  SpotifyIcon,
 } from '@/components/SocialIcons';
 import image1 from '@/images/photos/image-1.jpg';
 import image2 from '@/images/photos/image-2.jpg';
@@ -24,29 +26,30 @@ import logoReverse from '@/images/logos/reverse-republic.svg';
 import { generateRssFeed } from '@/lib/generateRssFeed';
 import { getAllArticles } from '@/lib/getAllArticles';
 import { formatDate } from '@/lib/formatDate';
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 
-function MailIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      />
-      <path
-        d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
-      />
-    </svg>
-  );
-}
+// function MailIcon(props) {
+//   return (
+//     <svg
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       strokeWidth="1.5"
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//       aria-hidden="true"
+//       {...props}
+//     >
+//       <path
+//         d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
+//         className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+//       />
+//       <path
+//         d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
+//         className="stroke-zinc-400 dark:stroke-zinc-500"
+//       />
+//     </svg>
+//   );
+// }
 
 function BriefcaseIcon(props) {
   return (
@@ -246,6 +249,7 @@ function Photos() {
 }
 
 export default function Home({ articles }) {
+
   return (
     <>
       <Head>
@@ -259,7 +263,7 @@ export default function Home({ articles }) {
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl" >
             Full-stack Creative, Musician, Coach and hands-on builder.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
@@ -286,6 +290,11 @@ export default function Home({ articles }) {
               href="https://linkedin.com/ryanlisse"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+            />
+            <SocialLink
+              href="https://open.spotify.com/playlist/5t088NuoWRH2E6y8GAWYwn?si=NwX9_h2gRkaPZtnBaq4Emw"
+              aria-label="Listen on Spotify"
+              icon={SpotifyIcon}
             />
           </div>
         </div>

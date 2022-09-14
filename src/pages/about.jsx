@@ -9,6 +9,7 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
+  SpotifyIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
@@ -17,9 +18,9 @@ function SocialLink({ className, href, children, icon: Icon }) {
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="flex text-sm font-medium transition group text-zinc-800 hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <Icon className="flex-none w-6 h-6 transition fill-zinc-500 group-hover:fill-teal-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -41,10 +42,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>About - Ryan Lisse</title>
         <meta
           name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
+          content="I’m Ryan Lisse. I live in Almere next to Amsterdam, where I design the future."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -55,64 +56,71 @@ export default function About() {
                 src={portraitImage}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                className="object-cover aspect-square rotate-3 rounded-2xl bg-zinc-100 dark:bg-zinc-800"
               />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the
+              I’m Ryan Lisse. I live in Almere a city next to Amsterdam, where I design the
               future.
             </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <div className="mt-6 text-base space-y-7 text-zinc-600 dark:text-zinc-400">
               <p>
                 I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+                wrote my first song when I was 10 years old, when i was 12 years old I was watching a documentary about Michael jackson and Quicy Jones Sr and told my mom that wanted to be like him and meet him someday.
+                she told me to write down my goals and and so I did.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+                The only thing I loved more than computers as a kid was music.
+                .....
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+                👨🏿‍💻 I’m a creative, marketer and a full-stack web developer
+
+                🎹 With 20+ years of experience in the music and entertainment scene
+
+                ▶️ Songs i've worked on
+
+                🖥 I have a passion for learning new technologies and I consider myself a self-solver/professional googler
+
+                ₿ Passionate about the web3 space, I believe web3 can create a future where creators have all the tools to create their art and build, grow and monetize their communities
+
+                🐶 Proud father of two kids and a dog
+
+                🇳🇱 Born in Amsterdam roots from Suriname 🇸🇷
+
+                🤓 Probably the coolest nerd you will ever meet
+                To be continued!!
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              <SocialLink href="https://twitter.com/ryanlisse" icon={TwitterIcon}>
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              <SocialLink href="https://instagram.com/ryanlissemindset" icon={InstagramIcon} className="mt-4">
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              <SocialLink href="https://github.com/ryanlisse" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink href="https://linkedin.com/ryanlisse" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
+              <SocialLink href="https://open.spotify.com/playlist/5t088NuoWRH2E6y8GAWYwn?si=NwX9_h2gRkaPZtnBaq4Emw" icon={SpotifyIcon} className="mt-4">
+                Listen on Spotify
+              </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:ryan@ryanlisse.com"
                 icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+                className="pt-8 mt-8 border-t border-zinc-100 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
+                ryan@ryanlisse.com
               </SocialLink>
             </ul>
           </div>
