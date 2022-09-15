@@ -26,7 +26,8 @@ import logoReverse from '@/images/logos/reverse-republic.svg';
 import { generateRssFeed } from '@/lib/generateRssFeed';
 import { getAllArticles } from '@/lib/getAllArticles';
 import { formatDate } from '@/lib/formatDate';
-import { useAutoAnimate } from '@formkit/auto-animate/react'
+import AnimatedText from '@/components/AnimatedText';
+
 
 // function MailIcon(props) {
 //   return (
@@ -264,12 +265,16 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl" >
-            Full-stack Creative, Musician, Coach and hands-on builder.
+            <AnimatedText text="Fullstack Creative, Musician, " />
+            <AnimatedText text="Coach and hands-on builder." />
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 text-base text-zinc-500 dark:text-zinc-300">
+
             Hi 👋🏾 I’m Ryan a creative, marketer and a full-stack web developer based in Amsterdam.
-            I’m passionate about helping creatives create a legacy, I believe web3 can create a future where creators have all the tools to create their art and build, grow and monetize their communities.
+            I’m passionate about helping creatives create a legacy, I believe web3 can create a future where creators have all the tools to create their art and build, grow and monetize their communities
+
           </p>
+
           <div className="flex gap-6 mt-6">
             <SocialLink
               href="https://twitter.com/ryanlisse"
