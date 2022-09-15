@@ -80,8 +80,6 @@ export default function About() {
 
                 🎹 With 20+ years of experience in the music and entertainment scene
 
-                ▶️ Songs i've worked on
-
                 🖥 I have a passion for learning new technologies and I consider myself a self-solver/professional googler
 
                 ₿ Passionate about the web3 space, I believe web3 can create a future where creators have all the tools to create their art and build, grow and monetize their communities
