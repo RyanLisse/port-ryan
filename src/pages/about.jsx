@@ -45,7 +45,7 @@ export default function About() {
         <title>About - Ryan Lisse</title>
         <meta
           name="description"
-          content="I’m Ryan Lisse. I live in Almere next to Amsterdam, where I design the future."
+          content="I'm Ryan Lisse. I live in Almere next to Amsterdam, where I design the future."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
