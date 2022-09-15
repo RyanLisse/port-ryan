@@ -270,7 +270,7 @@ export default function Home({ articles }) {
           </h1>
           <p className="mt-6 text-base text-zinc-500 dark:text-zinc-300">
 
-            Hi 👋🏾 I’m Ryan a creative, marketer and a full-stack web developer based in Amsterdam.
+            Hi <span className="animate-pulse">👋🏾</span> I’m Ryan a creative, marketer and a full-stack web developer based in Amsterdam.
             I’m passionate about helping creatives create a legacy, I believe web3 can create a future where creators have all the tools to create their art and build, grow and monetize their communities
 
           </p>
