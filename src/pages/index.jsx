@@ -2,7 +2,9 @@ import Image from 'next/future/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import clsx from 'clsx';
+import { useEffect } from 'react'
 
+import gsap from 'gsap'
 
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
@@ -264,7 +266,7 @@ export default function Home({ articles }) {
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl" >
+          <h1 className="text-3xl font-black tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl" >
             <AnimatedText text="Fullstack Creative, Musician, " />
             <AnimatedText text="Coach and hands-on builder." />
           </h1>
@@ -274,6 +276,7 @@ export default function Home({ articles }) {
             I’m passionate about helping creatives create a legacy, I believe web3 can create a future where creators have all the tools to create their art and build, grow and monetize their communities
 
           </p>
+
 
           <div className="flex gap-6 mt-6">
             <SocialLink
@@ -303,20 +306,24 @@ export default function Home({ articles }) {
             />
           </div>
         </div>
+        <p className="mt-4 font-mono tracking-tight text-zinc-400 dark:text-zinc-100 sm:text-base" id="marqy">
+          <span > Front-end developer, Product & web designer, Nextjs & web3 enthusiast, musician, explorer and hands-on builder</span>
+        </p>
       </Container>
       <Photos />
       <Container className="mt-24 md:mt-28">
-        <div className="grid max-w-xl grid-cols-1 mx-auto gap-y-20 lg:max-w-none lg:grid-cols-2">
+        <div className="grid max-w-xl grid-cols-1 mx-auto gap-y-20 lg:max-w-none lg:grid-cols-2" >
           <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/* <Newsletter /> */}
+
             <Resume />
           </div>
         </div>
+
       </Container>
     </>
   );
