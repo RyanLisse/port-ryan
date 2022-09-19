@@ -306,9 +306,7 @@ export default function Home({ articles }) {
             />
           </div>
         </div>
-        <p className="mt-4 font-mono tracking-tight text-zinc-400 dark:text-zinc-100 sm:text-base" id="marqy">
-          <span > Front-end developer, Product & web designer, Nextjs & web3 enthusiast, musician, explorer and hands-on builder</span>
-        </p>
+
       </Container>
       <Photos />
       <Container className="mt-24 md:mt-28">
