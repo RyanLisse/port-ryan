@@ -1,10 +1,12 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/future/image'
 import heading from './Coursera D6XA5HPSH2M5-html-Css-In-Depth.png'
+import Link from 'next/link';
+
 
 export const meta = {
   author: 'Ryan Lisse',
-  date: '2022-09-16',
+  date: '2022-09-19',
   title: 'Mastering HTML and CSS',
   description:
     'HTML and CSS in depth',
@@ -12,6 +14,8 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-<Image src={heading} alt="certificate" />
+<Link href="https://www.coursera.org/account/accomplishments/verify/LBHR5UKSDFDZ">
+<div><Image src={heading} alt="certificate" /></div>
+</Link>
 
 To be continued....

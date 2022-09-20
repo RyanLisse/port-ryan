@@ -1,6 +1,7 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/future/image'
 import heading from './version-control.png'
+import Link from 'next/link';
 
 export const meta = {
   author: 'Ryan Lisse',
@@ -12,7 +13,12 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
+<Link href="https://coursera.org/verify/6PFXVJY2KN2J">
+
 <Image src={heading} alt="certificate" />
+
+</Link>
+
 ## So what is version control? 
 version control is a system that records changes to a file or set of files over time so that you can access specific versions later. In software development, Version Control Systems (VCS) allows developers to manage changes to their code and track who made each change.
 Honestly I only knew of Github and Gitlab because the CEO is a dutch developer/Entrepreneur(lookup Sid Sijbrandij if it peaked your interest).

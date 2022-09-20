@@ -1,6 +1,7 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/future/image'
 import heading from './Coursera LBHR5UKSDFDZ-Introduction to Front-End Development.png'
+import Link from 'next/link';
 
 export const meta = {
   author: 'Ryan Lisse',
@@ -12,7 +13,12 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
+
+<Link href="https://coursera.org/verify/LBHR5UKSDFDZ">
+
 <Image src={heading} alt="certificate" />
+
+</Link>
 
 ## I wanted to have a solid foundation in the world of coding and build beautiful websites and apps as a career!
 Part of it is imposter syndrome, but I really feel this is helping me lay down a good foundation as a Developer.

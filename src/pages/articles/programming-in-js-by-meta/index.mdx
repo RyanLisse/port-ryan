@@ -1,6 +1,7 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/future/image'
 import heading from './Coursera K4K78CX2FWBS javascript.png'
+import Link from 'next/link';
 
 export const meta = {
   author: 'Ryan Lisse',
@@ -12,7 +13,11 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
+<Link href="https://coursera.org/verify/K4K78CX2FWBS">
+
 <Image src={heading} alt="certificate" />
+
+</Link>
 
 ## Javascript is the language of the web!
 One of the basic principles of programming can be summed with the acronym DRY in other words don't repeat yourself.

@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 import Head from 'next/head'
-
+import Link from 'next/link';
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoNeuVibes from '@/images/projects/neuvibez.png';
@@ -8,6 +8,13 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoMuzikaP from '@/images/projects/muzika-p.jpg'
+import {
+  TwitterIcon,
+  InstagramIcon,
+  GitHubIcon,
+  LinkedInIcon,
+  SpotifyIcon,
+} from '@/components/SocialIcons';
 
 const projects = [
   {
@@ -15,6 +22,7 @@ const projects = [
     description:
       'Muzika-P Platform for Musicians',
     link: { href: 'https://muzika-p.com/', label: 'muzika-p.com' },
+    github: { href: 'https://github.com/RyanLisse/neu-vibes-web2', label: 'github.com' },
     logo: logoMuzikaP,
   },
   {
@@ -22,6 +30,7 @@ const projects = [
     description:
       'A Web3 TikTok for music videos.',
     link: { href: 'https://neu-vibes-web2.vercel.app/', label: 'Neu-Vibes-Web3' },
+    github: { href: 'https://github.com/RyanLisse/neu-vibes-web2', label: 'github.com' },
     logo: logoNeuVibes,
   },
   {
@@ -29,6 +38,7 @@ const projects = [
     description:
       'Real-time video streaming library, optimized for interstellar transmission.',
     link: { href: '#', label: 'github.com' },
+    github: { href: 'https://github.com/RyanLisse/neu-vibes-web2', label: 'github.com' },
     logo: logoHelioStream,
   },
   {
@@ -36,6 +46,7 @@ const projects = [
     description:
       'The operating system that powers our Planetaria space shuttles.',
     link: { href: '#', label: 'github.com' },
+    github: { href: '#', label: 'github.com' },
     logo: logoCosmos,
   },
   {
@@ -43,6 +54,7 @@ const projects = [
     description:
       'The schematics for the first rocket I designed that successfully made it to orbit.',
     link: { href: '#', label: 'github.com' },
+    github: { href: 'https://github.com/RyanLisse/neu-vibes-web2', label: 'github.com' },
     logo: logoOpenShuttle,
   },
 ]
@@ -55,8 +67,9 @@ function LinkIcon(props) {
         fill="currentColor"
       />
     </svg>
-  )
+  );
 }
+
 
 export default function Projects() {
   return (
