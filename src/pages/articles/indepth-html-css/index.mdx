@@ -1,0 +1,17 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/future/image'
+import heading from './Coursera D6XA5HPSH2M5-html-Css-In-Depth.png'
+
+export const meta = {
+  author: 'Ryan Lisse',
+  date: '2022-09-16',
+  title: 'Mastering HTML and CSS',
+  description:
+    'HTML and CSS in depth',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+<Image src={heading} alt="certificate" />
+
+To be continued....
