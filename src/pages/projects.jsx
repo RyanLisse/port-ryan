@@ -7,13 +7,17 @@ import logoAisha from '@/images/projects/iamaisha.nl.jpg';
 import logoPirateShop from '@/images/projects/pirateshop.jpg';
 import logoSeamstress from '@/images/projects/seamstress.png';
 import logoOgPass from '@/images/projects/NFT.png';
+import logoMangata from '@/images/projects/Mangata.png';
+
 
 const projects = [
   {
     name: 'Tokengated MintPage',
     description:
       'An NFT Mintpage where the content is tokengated.Only people with the NFT can see the content behind the page',
-    link: { href: 'https://tokengated-3rdweb.vercel.app/', label: 'live demo' },
+    link: {
+      href: 'https://tokengated-3rdweb.vercel.app/', label: 'live demo'
+    },
 
     logo: logoOgPass,
   },
@@ -48,6 +52,14 @@ const projects = [
     link: { href: 'https://seamstress-166.superhi.com/', label: 'website' },
 
     logo: logoSeamstress,
+  },
+  {
+    name: 'Mangata and Gallo',
+    description:
+      'An e-commerce store demo website used for my submission for the "HTML and CSS in depth", part of the Meta Front-End Developer Professional course ',
+    link: { href: 'https://metafrontend-html-css.ryanlisse.repl.co/', label: 'website' },
+
+    logo: logoMangata,
   },
 ]
 
