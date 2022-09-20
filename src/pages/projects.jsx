@@ -4,7 +4,7 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoNeuVibes from '@/images/projects/neuvibez.png';
 import logoAisha from '@/images/projects/iamaisha.nl.jpg';
-import logoPirateShop from '@/images/projects/pirateShop.jpg';
+import logoPirateShop from '@/images/projects/pirateshop.jpg';
 import logoSeamstress from '@/images/projects/seamstress.png';
 import logoOgPass from '@/images/projects/NFT.png';
 
