@@ -1,61 +1,53 @@
 import Image from 'next/future/image'
-import Head from 'next/head'
-import Link from 'next/link';
+import Head from 'next/head';
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoNeuVibes from '@/images/projects/neuvibez.png';
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoMuzikaP from '@/images/projects/muzika-p.jpg'
-import {
-  TwitterIcon,
-  InstagramIcon,
-  GitHubIcon,
-  LinkedInIcon,
-  SpotifyIcon,
-} from '@/components/SocialIcons';
+import logoAisha from '@/images/projects/iamaisha.nl.jpg';
+import logoPirateShop from '@/images/projects/pirateShop.jpg';
+import logoSeamstress from '@/images/projects/seamstress.png';
+import logoOgPass from '@/images/projects/NFT.png';
 
 const projects = [
   {
-    name: 'Muzika-P',
+    name: 'Tokengated MintPage',
     description:
-      'Muzika-P Platform for Musicians',
-    link: { href: 'https://muzika-p.com/', label: 'muzika-p.com' },
-    github: { href: 'https://github.com/RyanLisse/neu-vibes-web2', label: 'github.com' },
-    logo: logoMuzikaP,
+      'An NFT Mintpage where the content is tokengated.Only people with the NFT can see the content behind the page',
+    link: { href: 'https://tokengated-3rdweb.vercel.app/', label: 'live demo' },
+
+    logo: logoOgPass,
   },
   {
     name: 'Neu-Vibez',
     description:
       'A Web3 TikTok for music videos.',
     link: { href: 'https://neu-vibes-web2.vercel.app/', label: 'Neu-Vibes-Web3' },
-    github: { href: 'https://github.com/RyanLisse/neu-vibes-web2', label: 'github.com' },
+
     logo: logoNeuVibes,
   },
   {
-    name: 'HelioStream',
+    name: 'Pirate Shop Solana',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    github: { href: 'https://github.com/RyanLisse/neu-vibes-web2', label: 'github.com' },
-    logo: logoHelioStream,
+      'A simple storefront built on the Solana blockchain written in typescript and rust.',
+    link: { href: 'https://buildspace-pirateshop.vercel.app/', label: 'live demo' },
+
+    logo: logoPirateShop,
   },
   {
-    name: 'cosmOS',
+    name: 'iamaisha.nl',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    github: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+      'An e-commerce store for multi-platinum artist I Am Aisha.',
+    link: { href: 'https://www.iamaisha.nl/masterclass/', label: 'website' },
+
+    logo: logoAisha,
   },
   {
-    name: 'OpenShuttle',
+    name: 'Seamstress',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    github: { href: 'https://github.com/RyanLisse/neu-vibes-web2', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'An e-commerce store demo website',
+    link: { href: 'https://seamstress-166.superhi.com/', label: 'website' },
+
+    logo: logoSeamstress,
   },
 ]
 
