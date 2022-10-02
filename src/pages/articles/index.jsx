@@ -1,9 +1,11 @@
 import Head from 'next/head'
-
+import client from "@/client";
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
+import groq from "groq";
+
 
 function Article({ article }) {
   return (
@@ -34,7 +36,11 @@ function Article({ article }) {
   )
 }
 
-export default function ArticlesIndex({ articles }) {
+
+
+
+export default function ArticlesIndex({ articles, posts }) {
+  console.log(posts)
   return (
     <>
       <Head>
@@ -61,9 +67,14 @@ export default function ArticlesIndex({ articles }) {
 }
 
 export async function getStaticProps() {
+  const query = groq`
+*[_type == "post"]
+  `;
+  const data = await client.fetch(query);
   return {
     props: {
       articles: (await getAllArticles()).map(({ component, ...meta }) => meta),
+      posts: data,
     },
   }
 }

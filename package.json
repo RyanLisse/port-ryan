@@ -1,5 +1,5 @@
 {
-  "name": "tailwindui-template",
+  "name": "portfolio-ryan-lisse",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,8 +23,11 @@
     "feed": "^4.2.2",
     "focus-visible": "^5.2.0",
     "framer-motion": "^7.3.5",
+    "groq": "^2.33.2",
     "gsap": "^3.11.1",
     "next": "12.2.5",
+    "next-mdx-remote": "^4.1.0",
+    "next-sanity": "^0.8.4",
     "postcss-focus-visible": "^6.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
